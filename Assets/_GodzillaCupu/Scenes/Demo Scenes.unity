@@ -202,7 +202,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2097477944}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AudioRecorder, Assembly-CSharp
         m_MethodName: StopRecording
         m_Mode: 1
@@ -214,7 +214,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2097477944}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AudioRecorder, Assembly-CSharp
         m_MethodName: StopTesting
         m_Mode: 1
@@ -464,6 +464,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1210194927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1210194928}
+  - component: {fileID: 1210194929}
+  m_Layer: 6
+  m_Name: Recorder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1210194928
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210194927}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1433095389}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1210194929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210194927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b6ebc053285db4abfe0c8f32139610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _recordedClip: {fileID: 0}
+  _recordingLength: 5
+  _audioSource: {fileID: 0}
+  _isRecording: 0
+  _selectedMicIndex: 0
+  _currentMicrophoneName: 
 --- !u!1 &1433095388
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,6 +548,7 @@ Transform:
   m_Children:
   - {fileID: 1815004326}
   - {fileID: 2097477942}
+  - {fileID: 1210194928}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1433095390
@@ -970,7 +1021,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2097477942}
   - component: {fileID: 2097477943}
-  - component: {fileID: 2097477944}
   m_Layer: 6
   m_Name: SST
   m_TagString: Untagged
@@ -1006,24 +1056,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data: {fileID: 11400000, guid: 97c9a670fb272594e8da52b4b475594a, type: 2}
---- !u!114 &2097477944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2097477941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74b6ebc053285db4abfe0c8f32139610, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isPersistant: 0
-  TESTINGONLY: 0
-  recordedClip: {fileID: 0}
-  filePath: 
-  fileName: recordedAudio.wav
-  isRecording: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
