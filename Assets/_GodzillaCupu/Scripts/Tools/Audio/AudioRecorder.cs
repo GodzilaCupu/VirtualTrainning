@@ -83,3 +83,4 @@ public class AudioRecorder : MonoBehaviour
         _audioSource.clip = _recordedClip;
         _audioSource.Play();
     }
+}
