@@ -39,7 +39,7 @@ public class AudioRecorder : MonoBehaviour
         Debug.Log("Microphone devices found: " + Microphone.devices.Length);
         for (int i = 0; i < Microphone.devices.Length; i++)
             Debug.Log("Microphone " + i + ": " + Microphone.devices[i]);
-
+        
         _currentMicrophoneName = _selectedMicIndex > Microphone.devices.Length ? Microphone.devices[0] : Microphone.devices[_selectedMicIndex];
     }
 
