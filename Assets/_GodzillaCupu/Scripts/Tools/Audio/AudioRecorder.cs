@@ -71,4 +71,16 @@ public class AudioRecorder : MonoBehaviour
         _isRecording = false;
         Debug.Log("Recording stopped on: " + _currentMicrophoneName);
     }
+
+    public void PlayRecordedClip()
+    {
+        if (_recordedClip == null)
+        {
+            Debug.LogError("No recorded clip found.");
+            return;
+        }
+
+        _audioSource.clip = _recordedClip;
+        _audioSource.Play();
+    }
 }
