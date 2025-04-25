@@ -1,4 +1,4 @@
 public interface IFixedUpdateObserver
 {
-    void ObserveFixedUpdate();
+    void OnObservedFixedUpdate();
 }
