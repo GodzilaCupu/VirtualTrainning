@@ -1,5 +1,5 @@
 public interface IUpdateObserver
 {
-    void ObservedUpdate();
+    void OnObservedUpdate();
 }
 
