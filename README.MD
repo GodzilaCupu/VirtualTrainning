@@ -1,4 +1,7 @@
 # Overview
+this project for fun, to practice how to integrating api llm google to unity
+This project on Hold, the author will handle this after another works done
+
 
 # What is the project?
 
